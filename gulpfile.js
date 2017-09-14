@@ -1,6 +1,8 @@
 const gulp = require('gulp');
 const babel = require('babelify');
+const browserify = require('browserify');
 const source = require('vinyl-source-stream');
+const buffer = require('vinyl-buffer');
 const browserSync = require('browser-sync');
 const reload = browserSync.reload;
 const notify = require('gulp-notify');
@@ -19,7 +21,7 @@ gulp.task('js', () => {
 	return browserify('dev/scripts/app.js', {debug: true})
 		.transform('babelify', {
 			sourceMaps: true,
-			presets: ['es2015','react']
+			presets: ['es2015']
 		})
 		.bundle()
 		.on('error',notify.onError({
@@ -35,7 +37,7 @@ gulp.task('js', () => {
 gulp.task('bs', () => {
 	return browserSync.init({
 		server: {
-			baseDir: './',
+			baseDir: './'
 		}
 	});
 });

@@ -1,0 +1,47 @@
+#landing {
+	background: $brandColor;
+	color: white;
+	padding-bottom: 50px;
+	position: relative;
+}
+
+#landing .wrapper {
+	display: flex;
+	justify-content: space-around;
+}
+
+.landing__greeting {
+	width: 45%;
+}
+
+.landing__hello {
+	margin-bottom: 30px;
+}
+
+.landing__myName {
+	font-weight: 600;
+}
+
+.landing__myRole {
+	text-transform: uppercase;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	padding: 5px 0;
+	width: 107px;
+	margin-bottom: 30px;
+}
+
+.landing__greeting button {
+	margin-top: 30px;
+	color: white;
+	border: 1px solid white;
+	&:hover {
+		background: white;
+		color: $brandColor;
+		box-shadow: 2px 4px 15px 0px rgba(0, 0, 0, 0.3);
+	}
+}
+
+.landing__img {
+	width: 45%;
+}

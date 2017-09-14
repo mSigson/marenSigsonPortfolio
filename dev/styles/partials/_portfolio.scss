@@ -1,0 +1,32 @@
+.portfolio__piece  {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-bottom: 25px;
+}
+
+.portfolio__piece:nth-child(even){
+	flex-direction: row-reverse;
+}
+
+.portfolio__pieceImgContainer {
+	width: 37.5%;
+}
+
+.portfolio__pieceImgContainer img {
+	width: 100%;
+}
+
+.portfolio__pieceInfo {
+	width: 50%;
+}
+
+.portfolio__pieceInfo h3 {
+	text-transform: uppercase;
+	color: $brandColor;
+	font-weight: 400;
+}
+
+.portfolio__liveLinksContainer button {
+	margin-right: 10px;
+}

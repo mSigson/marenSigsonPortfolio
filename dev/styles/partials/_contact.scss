@@ -1,0 +1,17 @@
+input, textarea {
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid $brandColor;
+	width: 100%;
+	padding: 10px 0;
+	margin-bottom: 20px;
+}
+
+.contact__nameInput input {
+	width: 49%;
+}
+
+.contact__nameInput input:nth-child(1) {
+	margin-right: 10px;
+}	

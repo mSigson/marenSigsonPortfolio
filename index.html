@@ -3,23 +3,31 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Maren Sigson</title>
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link rel="stylesheet" href="public/styles/style.css">
 </head>
 <body>
 	<header>
 		<div class="wrapper">
 			<nav>
-				<a href="#aboutMe">About me</a>
-				<a href="#skills">Skills</a>
-				<a href="#portfolio">Portfolio</a>
-				<a href="#contact">Contact</a>
+				<ul>
+					<a href="#aboutMe"><li>About</li></a>
+					<a href="#skills">Skills</a>
+					<a href="#portfolio">Portfolio</a>
+					<a href="#contact">Contact</a>
+				</ul>
 			</nav>
 		</div>
 	</header>
 	<section id="landing">
 		<div class="wrapper">
 			<div class="landing__greeting">
-				<h2>Hello I'm</h2>
-				<h1>Maren Sigson</h1>
+				<div class="landing__hello">
+					<h1>Hello I'm </h1>
+					<h1><span class="landing__myName">Maren Sigson</span></h1>
+				</div>
+				<p class="landing__myRole">Web Developer</p>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed vero laboriosam ducimus tempore recusandae, delectus hic voluptate doloribus dolor molestias sit dolore iusto voluptates, eius a aut. Ab, assumenda, ut.</p>
 				<button class="landing_downloadResumeBtn">Download Resume</button>
 			</div>
@@ -32,10 +40,10 @@
 	</section>
 	<section id="aboutMe">
 		<div class="wrapper">
-			<h3>About Me</h3>
+			<h2>About Me</h2>
 			<div class="aboutMe__infoContainer">
-				<div class="aboutMe__imgContainer imgBorderLeft">
-					<img class="aboutMe__img" src="" alt="">
+				<div class="aboutMe__imgContainer imgBorder">
+					<img class="aboutMe__img right" src="dev/assets/headshot.jpg" alt="A photo of Maren Sigson sitting on the infamous HackerYou red chair.">
 				</div>
 				<div class="aboutMe__textContainer">
 					<p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit unde numquam cupiditate nulla voluptatum, iure, ex libero voluptates! Magnam ipsam laudantium aliquid quaerat in nostrum nesciunt consequatur saepe amet voluptatibus.</p>
@@ -47,53 +55,78 @@
 	</section>
 	<section id="skills">
 		<div class="wrapper">
-			<div class="skills__container">
-				<h3>Skills</h3>
-				<p class="skills__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut libero voluptate, rerum est consequatur, at. Pariatur, ipsam facilis eligendi, consectetur expedita autem nam possimus aut distinctio asperiores quo, laudantium fugiat.</p>
+			<div class="skills__borderContainer">
+				<div class="skills__textContainer">
+					<h2>Skills</h2>
+					<p class="skills__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut libero voluptate, rerum est consequatur, at. Pariatur, ipsam facilis eligendi, consectetur expedita autem nam possimus aut distinctio asperiores quo, laudantium fugiat.</p>
+				</div>
 				<div class="skills__skillsIconsContainer">
-					<div class="skills__skill">
-						<img class="skills_skillIcon" src="" alt="">
-						<h4>HTML 5</h4>
+					<div class="skills__rowOne">
+						<div class="skills__skill">
+							<div class="skills__labelContainerExtraBorder">
+								<div class="skills__labelContainerBorder">
+									<div class="skills__labelContainer">
+										<i class="devicon-html5-plain-wordmark skillIcon"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="skills__skill">
+							<div class="skills__labelContainerExtraBorder">
+								<div class="skills__labelContainerBorder">
+									<div class="skills__labelContainer">
+										<i class="devicon-css3-plain-wordmark"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="skills__skill">
+							<div class="skills__labelContainerExtraBorder">
+								<div class="skills__labelContainerBorder">
+									<div class="skills__labelContainer">
+										<i class="devicon-jquery-plain-wordmark"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="skills__skill">
+							<div class="skills__labelContainerExtraBorder">
+								<div class="skills__labelContainerBorder">
+									<div class="skills__labelContainer">
+										<i class="devicon-javascript-plain"></i>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="skills__skill">
-						<img class="skills_skillIcon" src="" alt="">
-						<h4>CSS 3</h4>
-					</div>
-					<div class="skills__skill">
-						<img class="skills_skillIcon" src="" alt="">
-						<h4>Responsive Design</h4>
-					</div>
-					<div class="skills__skill">
-						<img class="skills_skillIcon" src="" alt="">
-						<h4>JavaScript</h4>
-					</div>
-					<div class="skills__skill">
-						<img class="skills_skillIcon" src="" alt="">
-						<h4>jQuery</h4>
-					</div>
-					<div class="skills__skill">
-						<img class="skills_skillIcon" src="" alt="">
-						<h4>React</h4>
-					</div>
-					<div class="skills__skill">
-						<img class="skills_skillIcon" src="" alt="">
-						<h4>HTML 5</h4>
-					</div>
-					<div class="skills__skill">
-						<img class="skills_skillIcon" src="" alt="">
-						<h4>Git</h4>
-					</div>
-					<div class="skills__skill">
-						<img class="skills_skillIcon" src="" alt="">
-						<h4>GitHub</h4>
-					</div>
-					<div class="skills__skill">
-						<img class="skills_skillIcon" src="" alt="">
-						<h4>Terminal</h4>
-					</div>
-					<div class="skills__skill">
-						<img class="skills_skillIcon" src="" alt="">
-						<h4>Gulp</h4>
+					<div class="skills__rowTwo">
+						<div class="skills__skill">
+							<div class="skills__labelContainerExtraBorder">
+								<div class="skills__labelContainerBorder">
+									<div class="skills__labelContainer">
+										<i class="devicon-react-original-wordmark"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="skills__skill">
+							<div class="skills__labelContainerExtraBorder">
+								<div class="skills__labelContainerBorder">
+									<div class="skills__labelContainer">
+										<i class="devicon-github-plain-wordmark"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="skills__skill">
+							<div class="skills__labelContainerExtraBorder">
+								<div class="skills__labelContainerBorder">
+									<div class="skills__labelContainer">
+										<i class="devicon-gulp-plain"></i>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -101,22 +134,40 @@
 	</section>
 	<section id="portfolio">
 		<div class="wrapper">
-			<h3>Portfolio</h3>
+			<h2>Portfolio</h2>
 			<div class="portfolio__piecesContainer">
 				<div class="portfolio__piece">
-					<div class="portfolio__pieceImgContainer">
-						<img class="portfolio__pieceImgContainer" src="" alt="">
+					<div class="portfolio__pieceImgContainer imgBorder">
+						<img class="right" src="dev/assets/psdConversion.png" alt="An image of the hero page of HackerYou bootcamp project 2 completed by Maren Sigson.">
 					</div>
 					<div class="portfolio__pieceInfo">
-						<h4>Piece Title</h4>
-						<h5>Utilized Skills</h5>
+						<h3 class="portfolio__pieceName">One Page Responsive 'Client' Website</h3>
+						<h4>HTML5  /   CSS3</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sequi illum, rem distinctio iusto aliquid excepturi tempora modi expedita.</p>
+						<div class="portfolio__liveLinksContainer">
+							<a href="">
+								<button>View Live</button>
+							</a>
+							<a href="https://github.com/mSigson/project2">
+								<button>Github</button>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio__piece">
+					<div class="portfolio__pieceImgContainer imgBorder">
+						<img class="portfolio__pieceImgContainer left" src="dev/assets/starWarsTheDatingGame.png" alt="A screen shot of Maren's 4th HackerYou project `Star Wars: The Dating Game`.">
+					</div>
+					<div class="portfolio__pieceInfo">
+						<h3>API Web Application</h3>
+						<h4>JAVASCRIPT  /  JQUERY  /  HTML5  /  CSS3</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sequi illum, rem distinctio iusto aliquid excepturi tempora modi expedita.</p>
 						<div class="portfolio__liveLinksContainer">
 							<a href="">
 								<button>View Live</button>
 							</a>
 							<a href="">
-								<button>(Github Icon)</button>
+								<button>Github</button>
 							</a>
 						</div>
 					</div>
@@ -126,33 +177,15 @@
 						<img class="portfolio__pieceImgContainer" src="" alt="">
 					</div>
 					<div class="portfolio__pieceInfo">
-						<h4>Piece Title</h4>
-						<h5>Utilized Skills</h5>
+						<h3>Piece Title</h3>
+						<h4>Utilized Skills</h4>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sequi illum, rem distinctio iusto aliquid excepturi tempora modi expedita.</p>
 						<div class="portfolio__liveLinksContainer">
 							<a href="">
 								<button>View Live</button>
 							</a>
 							<a href="">
-								<button>(Github Icon)</button>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="portfolio__piece">
-					<div class="portfolio__pieceImgContainer">
-						<img class="portfolio__pieceImgContainer" src="" alt="">
-					</div>
-					<div class="portfolio__pieceInfo">
-						<h4>Piece Title</h4>
-						<h5>Utilized Skills</h5>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sequi illum, rem distinctio iusto aliquid excepturi tempora modi expedita.</p>
-						<div class="portfolio__liveLinksContainer">
-							<a href="">
-								<button>View Live</button>
-							</a>
-							<a href="">
-								<button>(Github Icon)</button>
+								<button>Github</button>
 							</a>
 						</div>
 					</div>
@@ -162,8 +195,51 @@
 	</section>
 	<section id="contact">
 		<div class="wrapper">
-			
+			<div class="contact__sayHello">
+				<h2>Say Hello</h2>
+				<form action="submit">
+					<div class="contact__nameInput">
+						<input type="text" placeholder="First Name*" required="">
+						<input type="text" placeholder="Last Name*" required="">
+					</div>
+					<input type="email" placeholder="Your Email*" required>
+					<textarea name="" id="" cols="30" rows="10" placeholder="Your Message*"></textarea>
+					<button type="submit">Send Message</button>
+				</form>
+			</div>
+			<div class="contact__getInTouch">
+				<div class="contactInfo">
+					<div class="contact__address">
+						<div class="contact__icon">
+							<img src="" alt="">
+						</div>
+						<div class="contact__text">
+							<h3>E-Mail</h3>
+							<p>msigson@gmail.com</p>
+							<p>maren.codes</p>
+						</div>
+					</div>
+					<div class="contact__address">
+						<div class="contact__icon">
+							<img src="" alt="">
+						</div>
+						<div class="contact__text">
+							<h3>Call Me</h3>
+							<p>(416) 836 2468</p>
+						</div>
+					</div>
+				</div>
+				<div class="contact__socialMedia">
+					<a href="">Twitter</a>
+					<a href="">LinkedIn</a>
+					<a href="">GitHub</a>
+				</div>
+			</div>
 		</div>
 	</section>
+	<footer>
+		<p>Copyright Maren Sigson</p>
+	</footer>
+	<script type="text/javascript"></script>
 </body>
 </html>

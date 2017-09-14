@@ -1,0 +1,23 @@
+header {
+	background: $brandColor;
+	color: white;
+	box-shadow: 2px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+	width: 98%;
+	padding-right: 2%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+nav ul {
+	width: 45%;
+	display: flex;
+	justify-content: space-around;
+}
+
+header a {
+	font-size: $paragarphFontSize;
+	padding: 20px 20px;
+}

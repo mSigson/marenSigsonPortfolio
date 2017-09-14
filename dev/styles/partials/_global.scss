@@ -1,0 +1,86 @@
+html {
+	font-size: $htmlFontSize;
+	font-family: 'Exo 2', sans-serif;
+}
+
+.wrapper {
+	max-width: 1200px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+section {
+	padding: 40px 20px;
+}
+
+h1 {
+	font-size: $titleFontSize;
+	font-weight: 300;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+h2 {
+	color: $brandColor;
+	font-size: $subTitleFontSize;
+	font-weight: 500;
+	text-align: center;
+	margin-top: 0;
+}
+
+h3 {
+	font-weight: 300;
+	font-size: 18px;
+}
+
+p {
+	font-family: $paragarphFontSize;
+	font-weight: 300;
+}
+
+ul {
+	padding: 0;
+	list-style-type:none;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+button {
+	background: none;
+	border-radius: 20px;
+	padding: 10px 10px;
+	border: 1px solid $brandColor;
+	&:hover {
+		background: $brandColor;
+		color: white;
+		box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.5);
+	}
+	&:focus {
+	outline: none;
+	}
+}
+
+img {
+	max-width: 100%;
+}
+
+.imgBorder {
+	border: 10px solid $brandColor;
+	position: relative;
+}
+
+.imgBorder .right {
+	position: relative;
+	top: 20px;
+	right: -20px;
+}
+
+.imgBorder .left {
+	position: relative;
+	top: 20px;
+	left: -20px;
+}
