@@ -1,27 +1,55 @@
-#contact__message {
-	padding: 0px 60px;
+#contact {
+	padding: 40px 60px;
+	background: $brandColor;
 }
 
-#contact__message form {
-	margin-bottom: 40px;
+#contact .wrapper {
+	width: 80%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.contact__sayHello  {
+	width: 50%;
+	color: white;
+}
+
+.contact__sayHello h2 {
+	color: white;
+	text-align: left;
+	text-transform: uppercase;
 }
 
 input, textarea {
 	border-top: none;
 	border-left: none;
 	border-right: none;
-	border-bottom: 1px solid $brandColor;
+	border-bottom: 1px solid white;
+	background: $brandColor;
 	width: 100%;
 	padding: 10px 0;
 	margin-bottom: 20px;
 	font-size: $paragarphFontSize;
+	color: white;
 	&:focus {
 		outline: none;
 	}
+	&::placeholder {
+		color: white;
+		font-weight: 300;
+	}
+}
+
+input:focus::-webkit-input-placeholder {
+	opacity: 0;
+}
+
+textarea:focus::-webkit-input-placeholder {
+	opacity: 0;
 }
 
 .contact__nameInput input {
-	width: 49%;
+	width: 40%;
 }
 
 .contact__nameInput input:nth-child(1) {
@@ -31,30 +59,61 @@ input, textarea {
 textarea {
 	height: 135px;
 }
-
 .contact__formSubmitBtm {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
+	color: $brandColor;
 }
 
+.contact__formSubmitBtm button {
+	background: white;
+	color: $brandColor;
+	&:hover {
+		background: $brandColor;
+		color: white;
+		border: 3px solid white;
+	}
+}
 
+.contact__contactInfoContainer {
+	width: 270px;
+	background: white;
+	border-radius: 15px;
+	padding: 20px;
+	color: $brandColor;
+}
 
-#contact__SocialMedia {
-	background: $brandColorFaded;
-	width: 100%;
-	padding: 40px 0;
+.contact__contactInfoContainer h2 {
+	color: $brandColor;
+	font-size: 40px;
+}
+
+.contact__contactInfoContainer h3 {
+	margin: 0;
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+
+.contact__address {
+	color: $brandColor;
+	text-align: center;
+}
+
+.contact__address p {
+	margin: 0;
+	font-size: 20px;
 }
 
 .contact__socialMediaIconContainer {
 	margin: 0 auto;
-	width: 50%;
-	display: flex;
-	justify-content: space-around;
+	width: 90%;
+	padding: 40px 0px;
 }
 
 .contact__socialMediaIcon {
-	width: 10%;
 	display: flex;
-	justify-content: center;
-	align-content: center;
+}
+
+.contact__socialMediaIcon img {
+	width: 20%;
 }

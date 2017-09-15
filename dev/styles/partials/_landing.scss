@@ -7,15 +7,16 @@
 
 #landing .wrapper {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-bewteen;
 }
 
 .landing__greeting {
-	width: 52%;
+	width: 60%;
 }
 
 .landing__hello {
 	margin-bottom: 15px;
+	width: 100%;
 }
 
 .landing__hello h2 {

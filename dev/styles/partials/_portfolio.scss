@@ -1,8 +1,14 @@
+#portfolio h2 {
+	text-align: right;
+	padding-right: 60px;
+}
+
+
 .portfolio__piece  {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin-bottom: 150px;
+	margin-bottom: 100px;
 }
 
 .portfolio__piece:nth-child(even){
