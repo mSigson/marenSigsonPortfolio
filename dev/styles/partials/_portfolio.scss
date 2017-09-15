@@ -2,7 +2,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin-bottom: 25px;
+	margin-bottom: 150px;
 }
 
 .portfolio__piece:nth-child(even){
@@ -18,7 +18,7 @@
 }
 
 .portfolio__pieceInfo {
-	width: 50%;
+	width: 49%;
 }
 
 .portfolio__pieceInfo h3 {

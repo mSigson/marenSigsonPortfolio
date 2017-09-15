@@ -4,7 +4,7 @@ html {
 }
 
 .wrapper {
-	max-width: 1200px;
+	max-width: 1130px;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -52,12 +52,11 @@ a {
 button {
 	background: none;
 	border-radius: 20px;
-	padding: 10px 10px;
-	border: 1px solid $brandColor;
+	padding: 10px 30px;
+	border: 3px solid $brandColor;
 	&:hover {
 		background: $brandColor;
 		color: white;
-		box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.5);
 	}
 	&:focus {
 	outline: none;
@@ -69,7 +68,7 @@ img {
 }
 
 .imgBorder {
-	border: 10px solid $brandColor;
+	border: 5px solid $brandColor;
 	position: relative;
 }
 

@@ -11,11 +11,18 @@
 }
 
 .landing__greeting {
-	width: 45%;
+	width: 52%;
 }
 
 .landing__hello {
-	margin-bottom: 30px;
+	margin-bottom: 15px;
+}
+
+.landing__hello h2 {
+	color: white;
+	text-align: left;
+	margin-bottom: 0;
+	font-weight: 400;
 }
 
 .landing__myName {
@@ -27,8 +34,10 @@
 	border-top: 1px solid white;
 	border-bottom: 1px solid white;
 	padding: 5px 0;
-	width: 107px;
+	font-size: 20px;
+	width: 155px;
 	margin-bottom: 30px;
+	margin-top: 0;
 }
 
 .landing__greeting button {

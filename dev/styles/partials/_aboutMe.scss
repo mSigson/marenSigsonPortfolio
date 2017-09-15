@@ -1,3 +1,7 @@
+#aboutMe {
+	padding-bottom: 65px;
+}
+
 .aboutMe__infoContainer {
 	margin: 0 auto;
 	width: 100%;
@@ -10,5 +14,11 @@
 }
 
 .aboutMe__textContainer {
-	width: 56.25%;
+	width: 50%;
+	padding: 0 40px;
+	padding-top: 5px;
+}
+
+.aboutMe__textContainer h2 {
+	text-align: left;
 }

@@ -1,3 +1,11 @@
+#contact__message {
+	padding: 0px 60px;
+}
+
+#contact__message form {
+	margin-bottom: 40px;
+}
+
 input, textarea {
 	border-top: none;
 	border-left: none;
@@ -6,6 +14,10 @@ input, textarea {
 	width: 100%;
 	padding: 10px 0;
 	margin-bottom: 20px;
+	font-size: $paragarphFontSize;
+	&:focus {
+		outline: none;
+	}
 }
 
 .contact__nameInput input {
@@ -15,3 +27,34 @@ input, textarea {
 .contact__nameInput input:nth-child(1) {
 	margin-right: 10px;
 }	
+
+textarea {
+	height: 135px;
+}
+
+.contact__formSubmitBtm {
+	display: flex;
+	justify-content: flex-end;
+}
+
+
+
+#contact__SocialMedia {
+	background: $brandColorFaded;
+	width: 100%;
+	padding: 40px 0;
+}
+
+.contact__socialMediaIconContainer {
+	margin: 0 auto;
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.contact__socialMediaIcon {
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
