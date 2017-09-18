@@ -11,15 +11,30 @@ header nav {
 	padding-right: 2%;
 	display: flex;
 	justify-content: flex-end;
+	@include respond-to(small) {
+		position: relative;
+	}
 }
 
 nav ul {
 	background: $brandColor;
-	width: 55%;
+	width: 65%;
 	justify-content: space-around;
 	margin-right: 4.5%;
 	display: flex;
-	box-shadow: 0 3px 7px 0 rgba(0,0,0,.12)
+	box-shadow: 0 3px 7px 0 rgba(0,0,0,.12);
+	cursor: pointer;
+	transition: all 0.2s;
+	z-index: 10;
+	@include respond-to(small) {
+		position: absolute;
+		bottom: -295px;
+		flex-direction: column;
+	} @include respond-to(ex-small) {
+		width: 96.5%;
+		height: 80vh;
+		bottom: -460px;
+	}
 }
 
 .hidden {
@@ -34,9 +49,22 @@ nav ul {
 	transition: all 0.2s;
 }
 
+.noBoxShadow {
+	box-shadow: none;
+}
+
 header a {
 	font-size: $paragarphFontSize;
-	padding: 20px 27px;
+	padding: 27px 27px;
+	@include respond-to(small) {
+		font-size: 25px;
+	}
+	&:hover {
+		@include respond-to(small) {
+			background: white;
+			color: $brandColor;
+		}
+	}
 }
 
 // from Jesse Couch - https://codepen.io/designcouch/pen/Atyop
@@ -44,10 +72,12 @@ header a {
 .landing__hamburgerMenu {
 	display: flex;
 	width: 80px;
-	height: 65px;
+	height: 75px;
 	margin-right: 40px;
 	background: $brandColor;
-	box-shadow: 0 3px 7px 0 rgba(0,0,0,.12)
+	box-shadow: 0 3px 7px 0 rgba(0,0,0,.12);
+	cursor: pointer;
+	z-index: 20;
 }
 
 #nav-icon {
@@ -56,7 +86,6 @@ header a {
   height: 45px;
   position: relative;
   transform: rotate(0deg);
-  cursor: pointer;
   background: $brandColor;
 }
 
