@@ -9,17 +9,26 @@
 	<link href="https://fonts.googleapis.com/css?family=Exo+2:300,400,500,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link rel="stylesheet" href="public/styles/style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
 		<div class="wrapper">
 			<nav>
-				<ul>
+				<ul class="hidden">
 					<a href="#aboutMe"><li>About</li></a>
 					<a href="#skills">Skills</a>
 					<a href="#portfolio">Portfolio</a>
 					<a href="#contact">Contact</a>
 				</ul>
+				<div class="landing__hamburgerMenu">
+					<div id="nav-icon">
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					</div>
+				</div>
 			</nav>
 		</div>
 	</header>
@@ -34,8 +43,8 @@
 				<p class="landing__welcomeBlurb">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed vero laboriosam ducimus tempore recusandae, delectus hic voluptate doloribus dolor molestias sit dolore iusto voluptates, eius a aut. Ab, assumenda, ut.</p>
 				<button class="landing_downloadResumeBtn">Download Resume</button>
 			</div>
+			<img class="landing__img" src="dev/assets/marenColorPop.png" alt="A color pop genre characture of Maren Sigson.">
 		</div>
-		<img class="landing__img" src="dev/assets/MarenColoPopImage.png" alt="A color pop genre characture of Maren Sigson.">
 	</section>
 	<section id="aboutMe">
 		<div class="wrapper">
@@ -238,6 +247,6 @@
 	<footer>
 		<p>Copyright Maren Sigson</p>
 	</footer>
-	<script type="text/javascript"></script>
+	<script src="dev/scripts/app.js"></script>
 </body>
 </html>

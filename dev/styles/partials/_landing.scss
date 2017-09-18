@@ -1,17 +1,22 @@
 #landing {
 	background: $brandColor;
 	color: white;
-	position: relative;
 	overflow: hidden;
 	transition: all 0.5s ease;
+	padding-top: 100px;
 	@include respond-to(ex-small) {
 		padding-top: 20px;
 	}
 }
 
+#landing .wrapper {
+	position: relative;
+}
+
 .landing__greeting {
 	width: 50%;
 	transition: all 0.5s ease;
+	margin-left: 2%;
 	@include respond-to(large) {
 		width: 100%;
 	}
@@ -21,7 +26,7 @@
 	width: 150%;
 	transition: all 0.5s ease;
 	@include respond-to(large) {
-		width: 100%;
+		width: 80%;
 	} @include respond-to(small) {
 		font-size: 65px;
 	}
@@ -30,7 +35,7 @@
 
 .landing__greeting h2 {
 	transition: all 0.5s ease;
-	@include respond-to(ex-small) {
+	@include respond-to(small) {
 		font-size: 30px;
 	}
 }
@@ -79,7 +84,6 @@
 
 p.landing__welcomeBlurb {
 	width: 73%;
-	transition: all 0.5s ease;
 	@include respond-to(large) {
 		width: 50%;
 	}
@@ -92,7 +96,7 @@ p.landing__welcomeBlurb {
 .landing__img {
 	position: absolute;
 	right: 0;
-	top: 0;
+	bottom: -60px;
 	z-index: 10;
 	width: 47%;
 	max-width: 530px;

@@ -7,24 +7,39 @@
 	flex-wrap: wrap;
 	justify-content: space-around;
 	margin-bottom: 100px;
-	@include respond-to(large) {
-		position: relative;
+	@include respond-to(medium) {
+		margin-bottom: 50px;
 	}
 }
 
-.portfolio__piece:nth-child(1) {
-	margin-top: 100px;
+.portfolio__piece h3 {
+	margin-top: 0;
 }
 
 .portfolio__piece:nth-child(even){
 	flex-direction: row-reverse;
+	@include respond-to(large) {
+		flex-direction: row;
+		text-align: left;
+	}
+}
+
+.portfolio__piece:nth-child(odd){
+	@include respond-to(large) {
+		text-align: right;
+	} @include respond-to(medium) {
+		text-align: left;
+	}
 }
 
 .portfolio__pieceImgContainer {
 	width: 37.5%;
 	height: 10%;
+	transition: all 0.5s ease;
 	@include respond-to(large) {
 		width: 60%;
+	} @include respond-to(medium) {
+		width: 80%;
 	}
 }
 
@@ -35,6 +50,7 @@
 .portfolio__pieceInfo {
 	width: 49%;
 	@include respond-to(large) {
+		margin-top: 50px;
 		width: 80%;
 	}
 }
@@ -44,22 +60,6 @@
 	color: $brandColor;
 	font-weight: 400;
 	font-weight: 600;
-	@include respond-to(large) {
-		position: absolute;
-		bottom: 480px;
-		width: 90%;
-		margin-bottom: 0;
-	}
-}
-
-.portfolio__piece:nth-of-type(even) h3 {
-	text-align: right;
-}
-
-.portfolio__piece:nth-of-type(odd) h3 {
-	@include respond-to(large) {
-		left: 0px;
-	}
 }
 
 .portfolio__liveLinksContainer button {

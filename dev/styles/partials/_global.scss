@@ -10,7 +10,7 @@ html {
 }
 
 section {
-	padding: 40px 50px;
+	padding: 60px 50px;
 	@include respond-to(small) {
 		padding: 40px 25px;
 	}

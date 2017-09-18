@@ -1,5 +1,5 @@
 #aboutMe {
-	padding-bottom: 65px;
+	padding: 75px 50px
 }
 
 #aboutMe .wrapper h2 {
@@ -27,12 +27,11 @@
 	} @include respond-to(small) {
 		margin: 0 auto;
 		margin-top: 50px;
-		width: 50%;
+		width: 80%;
 	} 
 	@include respond-to(ex-small) {
 		margin: 0 auto;
 		margin-top: 50px;
-		width: 80%;
 	}
 }
 
@@ -41,7 +40,6 @@
 	padding: 0 20px;
 	padding-top: 5px;
 	text-align: right;
-	transition: all 0.5s ease;
 	@include respond-to(large) {
 		width: 55%;
 	} @include respond-to(medium) {
@@ -55,7 +53,6 @@
 }
 
 .aboutMe__buttonContainer {
-	transition: all 0.5s ease;
 	@include respond-to(large) {
 			width: 100%;
 	} @include respond-to(medium) {
