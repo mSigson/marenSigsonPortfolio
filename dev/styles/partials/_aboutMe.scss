@@ -1,5 +1,8 @@
 #aboutMe {
-	padding: 75px 50px
+	padding: 75px 50px;
+	@include respond-to(small) {
+		padding: 40px 5px;
+	} 
 }
 
 #aboutMe .wrapper h2 {
@@ -12,27 +15,23 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	@include respond-to(medium) {
+	@include respond-to(large) {
 		flex-direction: column-reverse;
 	}
 }
 
-
 .aboutMe__imgContainer {
 	width: 37.5%;
 	transition: all 0.5s ease;
-	@include respond-to(medium) {
-		width: 50%;
-		margin-top: 50px;
-	} @include respond-to(small) {
+	@include respond-to(large) {
+		width: 65%;
 		margin: 0 auto;
 		margin-top: 50px;
+	} @include respond-to(medium) {
 		width: 80%;
+	} @include respond-to(small) {
+		width: 90%;
 	} 
-	@include respond-to(ex-small) {
-		margin: 0 auto;
-		margin-top: 50px;
-	}
 }
 
 .aboutMe__textContainer {
@@ -41,17 +40,13 @@
 	padding-top: 5px;
 	text-align: right;
 	@include respond-to(large) {
-		width: 55%;
-	} @include respond-to(small) {
 		width: 100%;
-		margin: 0 auto;
-		transform: translateX(0);
 	}
 }
 
 .aboutMe__buttonContainer {
 	@include respond-to(large) {
-			width: 100%;
+		width: 100%;
 	}
 }
 

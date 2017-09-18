@@ -5,7 +5,8 @@
 	transition: all 0.5s ease;
 	padding-top: 100px;
 	@include respond-to(ex-small) {
-		padding-top: 70px;
+		padding-top: 60px;
+		padding-left: 30px;
 	}
 }
 
@@ -26,17 +27,14 @@
 
 .landing__greeting h1 {
 	width: 150%;
-	transition: all 0.5s ease;
 	@include respond-to(large) {
-		width: 80%;
+		width: 100%;
 	} @include respond-to(small) {
 		font-size: 65px;
 	}
 }
 
-
 .landing__greeting h2 {
-	transition: all 0.5s ease;
 	@include respond-to(small) {
 		font-size: 30px;
 	}
@@ -93,7 +91,6 @@ p.landing__welcomeBlurb {
 		width: 80%;
 	}
 }
-
 
 .landing__img {
 	position: absolute;

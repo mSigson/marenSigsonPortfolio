@@ -24,16 +24,17 @@ nav ul {
 	display: flex;
 	box-shadow: 0 3px 7px 0 rgba(0,0,0,.12);
 	cursor: pointer;
-	transition: all 0.2s;
+	transition: all 0.5s;
 	z-index: 10;
 	@include respond-to(small) {
 		position: absolute;
-		bottom: -295px;
+		bottom: -402%;
+		right: -2.5%;
 		flex-direction: column;
 	} @include respond-to(ex-small) {
 		width: 96.5%;
 		height: 80vh;
-		bottom: -460px;
+		bottom: -621%;
 	}
 }
 
@@ -78,6 +79,9 @@ header a {
 	box-shadow: 0 3px 7px 0 rgba(0,0,0,.12);
 	cursor: pointer;
 	z-index: 20;
+	@include respond-to(small) {
+		margin-right: 5px;
+	}
 }
 
 #nav-icon {

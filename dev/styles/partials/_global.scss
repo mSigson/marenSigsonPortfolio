@@ -12,7 +12,7 @@ html {
 section {
 	padding: 60px 50px;
 	@include respond-to(small) {
-		padding: 40px 25px;
+		padding: 40px 5px;
 	}
 }
 
@@ -34,6 +34,9 @@ h2 {
 h3 {
 	font-weight: 300;
 	font-size: 30px;
+	@include respond-to(small) {
+		font-size: 25px;
+	} 
 }
 
 p {
