@@ -1,17 +1,38 @@
 #landing {
 	background: $brandColor;
 	color: white;
-	padding-bottom: 50px;
 	position: relative;
-}
-
-#landing .wrapper {
-	display: flex;
-	justify-content: space-bewteen;
+	overflow: hidden;
+	transition: all 0.5s ease;
+	@include respond-to(ex-small) {
+		padding-top: 20px;
+	}
 }
 
 .landing__greeting {
-	width: 60%;
+	width: 50%;
+	transition: all 0.5s ease;
+	@include respond-to(large) {
+		width: 100%;
+	}
+}
+
+.landing__greeting h1 {
+	width: 150%;
+	transition: all 0.5s ease;
+	@include respond-to(large) {
+		width: 100%;
+	} @include respond-to(small) {
+		font-size: 65px;
+	}
+}
+
+
+.landing__greeting h2 {
+	transition: all 0.5s ease;
+	@include respond-to(ex-small) {
+		font-size: 30px;
+	}
 }
 
 .landing__hello {
@@ -28,6 +49,10 @@
 
 .landing__myName {
 	font-weight: 600;
+	transition: all 0.5s ease;
+	@include respond-to(ex-small) {
+		padding-top: 10px;
+	}
 }
 
 .landing__myRole {
@@ -52,6 +77,27 @@
 	}
 }
 
+p.landing__welcomeBlurb {
+	width: 73%;
+	transition: all 0.5s ease;
+	@include respond-to(large) {
+		width: 50%;
+	}
+	@include respond-to(small) {
+		width: 80%;
+	}
+}
+
+
 .landing__img {
-	width: 45%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 10;
+	width: 47%;
+	max-width: 530px;
+	min-width: 410px;
+	@include respond-to(large) {
+		display: none;
+	}
 }

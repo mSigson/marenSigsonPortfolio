@@ -4,12 +4,13 @@
 }
 
 #contact .wrapper {
-	width: 80%;
-	display: flex;
+	width: 100%;
+	// display: flex;
 	justify-content: space-around;
 }
 
 .contact__sayHello  {
+	margin-left: 10%;
 	width: 50%;
 	color: white;
 }

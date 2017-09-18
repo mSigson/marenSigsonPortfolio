@@ -5,26 +5,26 @@
 }
 
 @mixin respond-to($breakpoint) {
-  @if $breakpoint == "small" {
+  @if $breakpoint == "ex-small" {
     @media (max-width: 480px) {
       @content;
     }
   }
 
-  @else if $breakpoint == "music__buttonBreak" {
-    @media (max-width: 622px) {
+  @else if $breakpoint == "small" {
+    @media (max-width: 690px) {
       @content;
     }
   }
 
   @else if $breakpoint == "medium" {
-    @media (max-width: 768px) {
+    @media (max-width: 790px) {
       @content;
     }
   }
 
   @else if $breakpoint == "large" {
-    @media (max-width: 940px) {
+    @media (max-width: 900px) {
       @content;
     }
   }

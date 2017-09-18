@@ -1,6 +1,14 @@
 
 #skills {
 	background: linear-gradient(rgba(72,10,143,0.7) 0%, rgba(153,7,163,0.7) 100%);
+	transition: all 0.5s ease;
+	@include respond-to(large) {
+		padding: 40px 30px;
+	} @include respond-to(small) {
+		padding: 40px 10px;
+	} @include respond-to(ex-small) {
+		padding: 40px 0px;
+	}
 }
 
 #skills h2 {
@@ -11,14 +19,6 @@
 	width: 95%;
 	margin: 0 auto;
 	padding: 20px 0;
-	display: flex;
-}
-
-.skills__textContainer {
-	width: 40%;
-	color: white;
-	text-align: left;
-	padding-right: 45px;
 }
 
 .skills__textContainer h2 {
@@ -27,11 +27,37 @@
 }
 
 .skills__skillsIconsContainer {
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: space-around;
+}
+
+.skills__skillsIconsContainer .skills__skill:nth-child(4){
+	@include respond-to(large) {
+		margin-left: 21%;
+	} @include respond-to(small) {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+.skills__skillsIconsContainer .skills__skill:nth-child(5){
+	margin-left: 12%;
+	@include respond-to(large) {
+		margin-right: 21%;
+	} @include respond-to(small) {
+		margin-right: 0;
+		margin-left: 0;
+	}
+}
+
+.skills__skillsIconsContainer .skills__skill:nth-child(7){
+	margin-right: 12%;
+	@include respond-to(large) {
+		display: none;
+	}
 }
 
 .skills__skill {
@@ -40,6 +66,15 @@
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-bottom: 20px;
+	@include respond-to(large) {
+		width: 22%;
+		margin-bottom: 10px;
+	} @include respond-to(small) {
+		width: 33%;
+	} @include respond-to(ex-small) {
+		width: 50%;
+		margin-bottom: 30px;
+	}
 }
 
 // circle design inspired by http://rorymorris.co.uk/

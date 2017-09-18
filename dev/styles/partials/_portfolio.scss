@@ -1,14 +1,19 @@
 #portfolio h2 {
-	text-align: right;
-	padding-right: 60px;
+	text-align: left;
 }
-
 
 .portfolio__piece  {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	margin-bottom: 100px;
+	@include respond-to(large) {
+		position: relative;
+	}
+}
+
+.portfolio__piece:nth-child(1) {
+	margin-top: 100px;
 }
 
 .portfolio__piece:nth-child(even){
@@ -17,6 +22,10 @@
 
 .portfolio__pieceImgContainer {
 	width: 37.5%;
+	height: 10%;
+	@include respond-to(large) {
+		width: 60%;
+	}
 }
 
 .portfolio__pieceImgContainer img {
@@ -25,12 +34,32 @@
 
 .portfolio__pieceInfo {
 	width: 49%;
+	@include respond-to(large) {
+		width: 80%;
+	}
 }
 
 .portfolio__pieceInfo h3 {
 	text-transform: uppercase;
 	color: $brandColor;
 	font-weight: 400;
+	font-weight: 600;
+	@include respond-to(large) {
+		position: absolute;
+		bottom: 480px;
+		width: 90%;
+		margin-bottom: 0;
+	}
+}
+
+.portfolio__piece:nth-of-type(even) h3 {
+	text-align: right;
+}
+
+.portfolio__piece:nth-of-type(odd) h3 {
+	@include respond-to(large) {
+		left: 0px;
+	}
 }
 
 .portfolio__liveLinksContainer button {
