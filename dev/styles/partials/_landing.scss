@@ -11,10 +11,12 @@
 
 #landing .wrapper {
 	position: relative;
+	max-width: 1000px;
 }
 
 .landing__greeting {
-	width: 50%;
+	width: 45%;
+	margin-right: 1em;
 	transition: all 0.5s ease;
 	margin-left: 2%;
 	@include respond-to(large) {
@@ -95,10 +97,10 @@ p.landing__welcomeBlurb {
 
 .landing__img {
 	position: absolute;
-	right: 0;
+	right: -30px;
 	bottom: -60px;
 	z-index: 10;
-	width: 47%;
+	width: calc(55% - 1em);
 	max-width: 530px;
 	min-width: 410px;
 	@include respond-to(large) {
