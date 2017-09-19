@@ -4,10 +4,13 @@
 	overflow: hidden;
 	transition: all 0.5s ease;
 	padding-top: 100px;
-	@include respond-to(ex-small) {
-		padding-top: 60px;
-		padding-left: 30px;
-	}
+	@include respond-to(small) {
+		padding: 60px 30px;
+		padding-top: 125px;
+	} @include respond-to(ex-small) {
+		padding: 60px 5px;
+		padding-top: 100px;
+	} 
 }
 
 #landing .wrapper {
@@ -16,28 +19,27 @@
 }
 
 .landing__greeting {
-	width: 45%;
+	width: 65%;
 	margin-right: 1em;
 	transition: all 0.5s ease;
 	margin-left: 2%;
 	@include respond-to(large) {
 		width: 100%;
+	} @include respond-to(small) {
+		text-align: center;
 	}
 }
 
 .landing__greeting h1 {
-	width: 150%;
+	width: 95%;
 	@include respond-to(large) {
 		width: 100%;
 	} @include respond-to(small) {
-		font-size: 65px;
+		font-size: 59.5px;
+	} @include respond-to(ex-small) {
+		font-size: 45px;
 	}
-}
 
-.landing__greeting h2 {
-	@include respond-to(small) {
-		font-size: 30px;
-	}
 }
 
 .landing__hello {
@@ -50,6 +52,9 @@
 	text-align: left;
 	margin-bottom: 0;
 	font-weight: 400;
+	@include respond-to(small) {
+		display: none;
+	} 
 }
 
 .landing__myName {
@@ -69,6 +74,10 @@
 	width: 155px;
 	margin-bottom: 30px;
 	margin-top: 0;
+	@include respond-to(small) {
+		margin: 0 auto;
+		margin-top: 30px;
+	}
 }
 
 .landing__greeting button {
@@ -82,24 +91,26 @@
 	}
 }
 
+
 p.landing__welcomeBlurb {
-	width: 73%;
+	width: 60%;
+	line-height: 1.5;
 	@include respond-to(large) {
-		width: 50%;
-	}
-	@include respond-to(small) {
+		width: 40%;
+	} @include respond-to(small) {
+		width: 65%;
+		margin: 0 auto;
+		margin-top: 30px;
 		width: 80%;
 	}
 }
 
 .landing__img {
 	position: absolute;
-	right: -30px;
+	right: -60px;
 	bottom: -60px;
 	z-index: 10;
 	width: calc(55% - 1em);
-	max-width: 530px;
-	min-width: 410px;
 	@include respond-to(large) {
 		display: none;
 	}

@@ -11,6 +11,7 @@
 
 #aboutMe .wrapper h2 {
 	text-align: right;
+	margin-bottom: 30px;
 }
 
 .aboutMe__infoContainer {
@@ -22,6 +23,14 @@
 	@include respond-to(large) {
 		flex-direction: column-reverse;
 	}
+}
+
+.aboutMe__blurb {
+	font-size: 18px;
+	line-height: 1.5;
+	text-align: center;
+	margin: 0;
+	margin-bottom: 30px;
 }
 
 .aboutMe__imgContainer {
