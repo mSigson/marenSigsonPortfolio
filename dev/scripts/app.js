@@ -2,16 +2,17 @@ $(document).ready(function(){
 
 	$('.landing__hamburgerMenu').click(function(){
 		$('#nav-icon').toggleClass('open');
-		$('ul').toggleClass('openNav');
+		$('ul').addClass('flex');
+
+		if ($('#nav-icon').hasClass('open')){
+			$('ul').addClass('openNav');
+		} else {
+			$('ul').removeClass('openNav');
+		}
 	});
 
 	$("a").on('click', function(e) {
 		let hash = this.hash;
-
-		if ($(window).width() < 690){
-			$('#nav-icon').toggleClass('open');
-			$('ul').toggleClass('openNav');
-		}
 				
 		if (this.hash !== "") {
 			event.preventDefault();
@@ -23,15 +24,21 @@ $(document).ready(function(){
 
 	});
 
-	$('section').on('click',function(e) {
-		const clickover = $(event.target);
-		const $navbar = $("ul");
-		const _opened = $navbar.hasClass("openNav");
-
-		if (_opened === true) {
-			$navbar.removeClass("openNav")
+	$(window).on('resize', function(){
+		const win = $(this);
+		if (win.width() < 651) {
 			$('#nav-icon').removeClass('open');
-		}
+			$('ul').removeClass('openNav');
+		} if (win.width() > 650) {
+			$('ul').removeClass('flex');
+			$('ul').addClass('openNav');
+		} 
 	});
 
+
 });
+
+
+if ($(window).width() > 650 ){
+	$('ul').addClass('openNav');
+}

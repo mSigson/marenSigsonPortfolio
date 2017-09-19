@@ -18,20 +18,29 @@ header nav {
 
 nav ul {
 	background: $brandColor;
-	width: 65%;
+	width: 80%;
+	margin: 0 auto;
 	justify-content: space-around;
-	margin-right: 4.5%;
 	display: flex;
 	box-shadow: 0 3px 7px 0 rgba(0,0,0,.12);
 	cursor: pointer;
 	transition: all 0.5s;
 	z-index: 10;
 	text-shadow: 2px 2px rgba(0,0,0,0.5);
+	transition: all 0.2s;
+	visibility: hidden;
+	opacity: 0;
 	@include respond-to(small) {
 		position: absolute;
 		bottom: -402%;
 		right: -2.5%;
 		flex-direction: column;
+		background: white;
+		text-shadow: 1px 1px rgba(0,0,0,0.5);
+		border-radius: 15px;
+		display: none;
+		visibility: hidden;
+		opacity: 0;
 	} @include respond-to(ex-small) {
 		width: 96.5%;
 		height: 60vh;
@@ -55,16 +64,21 @@ nav ul {
 	box-shadow: none;
 }
 
+.flex {
+	display: flex;
+}
+
 header a {
 	font-size: $paragarphFontSize;
 	padding: 27px 27px;
+	color: white;
 	@include respond-to(small) {
 		font-size: 25px;
-	}
-	&:hover {
+		color: $brandColor;
+	} &:hover {
 		@include respond-to(small) {
-			background: white;
-			color: $brandColor;
+			background: $brandColor;
+			color: white;
 			text-shadow: none;
 		}
 	}
@@ -73,7 +87,6 @@ header a {
 // from Jesse Couch - https://codepen.io/designcouch/pen/Atyop
 
 .landing__hamburgerMenu {
-	display: flex;
 	width: 80px;
 	height: 75px;
 	margin-right: 40px;
@@ -81,8 +94,10 @@ header a {
 	box-shadow: 0 3px 7px 0 rgba(0,0,0,.12);
 	cursor: pointer;
 	z-index: 20;
+	display: none;
 	@include respond-to(small) {
 		margin-right: 5px;
+		display: flex;
 	}
 }
 

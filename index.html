@@ -17,7 +17,7 @@
 	<header>
 		<div class="wrapper">
 			<nav>
-				<ul class="hidden">
+				<ul class="">
 					<a href="#aboutMe"><li>About</li></a>
 					<a href="#skills"><li>Skills</li></a>
 					<a href="#portfolio"><li>Portfolio</li></a>
@@ -42,7 +42,7 @@
 					<h1><span class="landing__myName">Maren Sigson</span></h1>
 				</div>
 				<p class="landing__myRole">Web Developer</p>
-				<p class="landing__welcomeBlurb">Welcome to my site!  I am a web-developer living in Toronto looking to work with people on exciting new projects!</p>
+				<p class="landing__welcomeBlurb">Welcome to my site!  I am a web-developer living in Toronto looking to work with people on exciting projects!</p>
 				<button class="landing_downloadResumeBtn">Download Resume</button>
 			</div>
 			<img class="landing__img" src="public/assets/marenColorPop.png" alt="A color pop genre characture of Maren Sigson.">
@@ -56,10 +56,12 @@
 				</div>
 				<div class="aboutMe__textContainer">
 					<h2>About Me</h2>
-					<p class="aboutMe__blurb">I'm a recent graduate from HackerYou's full-time bootcamp, Canada’s original programming bootcamp.  My background as a performer has helped me appreciate working in groups and see first-hand the benefits of practicing your craft. </p>
+					<p class="#aboutMe__blurb">I'm a recent graduate from HackerYou's full-time bootcamp, Canada’s original programming bootcamp.  My background as a performer has helped me appreciate working in groups and see first-hand the benefits of practicing your craft. </p>
 					<div class="aboutMe__buttonContainer">
-						<a href="#contact"><button class="aboutMe__contactNowBtn">Contact Now</button></a>
-						<button class="aboutMe__downloadResumeBtn">Download Resume</button>
+						<a href="#contact">
+							<button class="aboutMe__contactNowBtn">Contact Now </button>
+						</a>
+						<button class="aboutMe__DownloadResumeBtn">Download Resume </button>
 					</div>
 				</div>
 			</div>
@@ -146,26 +148,8 @@
 					</div>
 					<div class="portfolio__pieceInfo">
 						<h3 class="portfolio__pieceName">One Page Responsive Website</h3>
+						<p>A fully responsive single page website converted from a PSD.  </p>
 						<h4>HTML5  /   CSS3</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sequi illum, rem distinctio iusto aliquid excepturi tempora modi expedita.</p>
-						<div class="portfolio__liveLinksContainer">
-							<a href="">
-								<button>View Live</button>
-							</a>
-							<a href="https://github.com/mSigson/project2">
-								<button>Github</button>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="portfolio__piece">
-					<div class="portfolio__pieceImgContainer imgBorder">
-						<img class="left" src="public/assets/starWarsTheDatingGame.png" alt="A screen shot of Maren's 4th HackerYou project `Star Wars: The Dating Game`.">
-					</div>
-					<div class="portfolio__pieceInfo">
-						<h3>API Web Application</h3>
-						<h4>JAVASCRIPT  /  JQUERY  /  HTML5  /  CSS3</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sequi illum, rem distinctio iusto aliquid excepturi tempora modi expedita.</p>
 						<div class="portfolio__liveLinksContainer">
 							<a href="">
 								<button>View Live</button>
@@ -177,13 +161,31 @@
 					</div>
 				</div>
 				<div class="portfolio__piece">
-					<div class="portfolio__pieceImgContainer">
-						<img class="portfolio__pieceImgContainer" src="" alt="">
+					<div class="portfolio__pieceImgContainer imgBorder">
+						<img class="left" src="public/assets/starWarsTheDatingGame.png" alt="A screen shot of Maren's 4th HackerYou project `Star Wars: The Dating Game`.">
 					</div>
 					<div class="portfolio__pieceInfo">
-						<h3>Piece Title</h3>
-						<h4>Utilized Skills</h4>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque sequi illum, rem distinctio iusto aliquid excepturi tempora modi expedita.</p>
+						<h3>API Web Application</h3>
+						<p> An interactive game built with jQuery.  Can you guess the song AND the movie it's from? Developed through pair programming.</p>
+						<h4>API  /  JAVASCRIPT  /  JQUERY  /  HTML5  /  CSS3</h4>
+						<div class="portfolio__liveLinksContainer">
+							<a href="http://maren.codes/swdg/">
+								<button>View Live</button>
+							</a>
+							<a href="http://mSigson.github.io/project4">
+								<button>Github</button>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio__piece">
+					<div class="portfolio__pieceImgContainer imgBorder">
+						<img class="right" src="public/assets/jQueryInteractive.png" alt="A screen shot of Maren's 3rd HackerYou project `Guess It!`.">
+					</div>
+					<div class="portfolio__pieceInfo">
+						<h3>jQuery Interactive Site</h3>
+						<p>An interactive game built with jQuery.  Can you guess the song name and the movie it's from? Developed through pair programming</p>
+						<h4> JQUERY  /  HTML5  /  CSS3</h4>
 						<div class="portfolio__liveLinksContainer">
 							<a href="">
 								<button>View Live</button>
@@ -201,7 +203,7 @@
 		<div class="wrapper">
 			<div class="contact__sayHello">
 				<h2>Say Hello</h2>
-				<form action="submit">
+				<form action="http://www.focuspocus.io/magic/msigson@gmail.com" method="POST">
 					<div class="contact__nameInput">
 						<input type="text" placeholder="First Name*" required="">
 						<input type="text" placeholder="Last Name*" required="">

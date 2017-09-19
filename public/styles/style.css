@@ -168,7 +168,7 @@ h3 {
       font-size: 25px; } }
 
 p {
-  font-family: 18px;
+  font-size: 18px;
   font-weight: 300; }
 
 ul {
@@ -226,21 +226,30 @@ header nav {
 
 nav ul {
   background: #7e3fc6;
-  width: 65%;
+  width: 80%;
+  margin: 0 auto;
   justify-content: space-around;
-  margin-right: 4.5%;
   display: flex;
   box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.12);
   cursor: pointer;
   transition: all 0.5s;
   z-index: 10;
-  text-shadow: 2px 2px rgba(0, 0, 0, 0.5); }
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+  transition: all 0.2s;
+  visibility: hidden;
+  opacity: 0; }
   @media (max-width: 690px) {
     nav ul {
       position: absolute;
       bottom: -402%;
       right: -2.5%;
-      flex-direction: column; } }
+      flex-direction: column;
+      background: white;
+      text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      display: none;
+      visibility: hidden;
+      opacity: 0; } }
   @media (max-width: 480px) {
     nav ul {
       width: 96.5%;
@@ -260,30 +269,36 @@ nav ul {
 .noBoxShadow {
   box-shadow: none; }
 
+.flex {
+  display: flex; }
+
 header a {
   font-size: 18px;
-  padding: 27px 27px; }
+  padding: 27px 27px;
+  color: white; }
   @media (max-width: 690px) {
     header a {
-      font-size: 25px; } }
+      font-size: 25px;
+      color: #7e3fc6; } }
   @media (max-width: 690px) {
     header a:hover {
-      background: white;
-      color: #7e3fc6;
+      background: #7e3fc6;
+      color: white;
       text-shadow: none; } }
 
 .landing__hamburgerMenu {
-  display: flex;
   width: 80px;
   height: 75px;
   margin-right: 40px;
   background: #7e3fc6;
   box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.12);
   cursor: pointer;
-  z-index: 20; }
+  z-index: 20;
+  display: none; }
   @media (max-width: 690px) {
     .landing__hamburgerMenu {
-      margin-right: 5px; } }
+      margin-right: 5px;
+      display: flex; } }
 
 #nav-icon {
   margin: auto;
@@ -335,7 +350,7 @@ header a {
   color: white;
   overflow: hidden;
   transition: all 0.5s ease;
-  padding-top: 100px; }
+  padding-top: 125px; }
   @media (max-width: 690px) {
     #landing {
       padding: 60px 30px;
@@ -465,7 +480,6 @@ p.landing__welcomeBlurb {
 .aboutMe__blurb {
   font-size: 18px;
   line-height: 1.5;
-  text-align: center;
   margin: 0;
   margin-bottom: 30px; }
 
@@ -488,7 +502,12 @@ p.landing__welcomeBlurb {
   text-align: right; }
   @media (max-width: 950px) {
     .aboutMe__textContainer {
-      width: 100%; } }
+      width: 60%;
+      transform: translateX(45%); } }
+  @media (max-width: 790px) {
+    .aboutMe__textContainer {
+      width: 80%;
+      transform: translateX(10%); } }
 
 @media (max-width: 950px) {
   .aboutMe__buttonContainer {
@@ -637,15 +656,11 @@ i {
 
 @media (max-width: 950px) {
   .portfolio__piece:nth-child(odd) {
-    text-align: right; } }
-
-@media (max-width: 790px) {
-  .portfolio__piece:nth-child(odd) {
     text-align: left; } }
 
 .portfolio__pieceImgContainer {
   width: 37.5%;
-  height: 10%;
+  min-height: 10%;
   transition: all 0.5s ease; }
   @media (max-width: 950px) {
     .portfolio__pieceImgContainer {
@@ -662,6 +677,9 @@ i {
   @media (max-width: 950px) {
     .portfolio__pieceInfo {
       margin-top: 50px;
+      width: 60%; } }
+  @media (max-width: 790px) {
+    .portfolio__pieceInfo {
       width: 80%; } }
 
 .portfolio__pieceInfo h3 {

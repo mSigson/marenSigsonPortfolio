@@ -29,15 +29,13 @@
 
 .portfolio__piece:nth-child(odd){
 	@include respond-to(large) {
-		text-align: right;
-	} @include respond-to(medium) {
 		text-align: left;
 	}
 }
 
 .portfolio__pieceImgContainer {
 	width: 37.5%;
-	height: 10%;
+	min-height: 10%;
 	transition: all 0.5s ease;
 	@include respond-to(large) {
 		width: 60%;
@@ -54,8 +52,14 @@
 	width: 49%;
 	@include respond-to(large) {
 		margin-top: 50px;
+		width: 60%;
+	} @include respond-to(medium) {
 		width: 80%;
 	}
+}
+
+.portfolio__piece:nth-child(even) .portfolio__pieceInfo {
+
 }
 
 .portfolio__pieceInfo h3 {

@@ -28,7 +28,6 @@
 .aboutMe__blurb {
 	font-size: 18px;
 	line-height: 1.5;
-	text-align: center;
 	margin: 0;
 	margin-bottom: 30px;
 }
@@ -42,7 +41,7 @@
 		margin-top: 50px;
 	} @include respond-to(medium) {
 		width: 80%;
-	}
+	} 
 }
 
 .aboutMe__textContainer {
@@ -51,7 +50,11 @@
 	padding-top: 5px;
 	text-align: right;
 	@include respond-to(large) {
-		width: 100%;
+		width: 60%;
+		transform: translateX(45%);
+	} @include respond-to(medium) {
+		width: 80%;
+		transform: translateX(10%);
 	}
 }
 
