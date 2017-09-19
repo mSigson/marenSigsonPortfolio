@@ -5,8 +5,13 @@ $(document).ready(function(){
 		$('ul').toggleClass('openNav');
 	});
 
-	$("a").on('click', function(event) {
+	$("a").on('click', function(e) {
 		let hash = this.hash;
+
+		if ($(window).width() < 690){
+			$('#nav-icon').toggleClass('open');
+			$('ul').toggleClass('openNav');
+		}
 				
 		if (this.hash !== "") {
 			event.preventDefault();
@@ -15,6 +20,7 @@ $(document).ready(function(){
 			scrollTop: $(hash).offset().top - 50
 			}, 600, function(){});
 		} 
+
 	});
 
 	$('section').on('click',function(e) {

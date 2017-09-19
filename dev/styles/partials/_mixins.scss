@@ -17,6 +17,12 @@
     }
   }
 
+ @else if $breakpoint == "pre-small" {
+    @media (max-width: 730px) {
+      @content;
+    }
+  }
+
   @else if $breakpoint == "medium" {
     @media (max-width: 790px) {
       @content;
@@ -30,7 +36,7 @@
   }
 
   @else if $breakpoint == "xlarge" {
-    @media (min-width: 1500px) {
+    @media (max-width: 1000px) {
       @content;
     }
   }

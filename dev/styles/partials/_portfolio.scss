@@ -1,5 +1,8 @@
 #portfolio h2 {
 	text-align: left;
+	@include respond-to(small) {
+		margin-left: 2%;
+	}
 }
 
 .portfolio__piece  {

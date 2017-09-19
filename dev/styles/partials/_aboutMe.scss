@@ -29,9 +29,7 @@
 		margin-top: 50px;
 	} @include respond-to(medium) {
 		width: 80%;
-	} @include respond-to(small) {
-		width: 90%;
-	} 
+	}
 }
 
 .aboutMe__textContainer {
@@ -50,6 +48,14 @@
 	}
 }
 
+.aboutMe__buttonContainer button{
+	margin-right: 10px;
+	@include respond-to(ex-small) {
+		margin-top: 20px;
+	}
+}
+
 .aboutMe__buttonContainer button:nth-child(1){
 	margin-right: 10px;
 }
+

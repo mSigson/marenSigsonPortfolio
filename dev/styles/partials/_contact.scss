@@ -8,16 +8,20 @@
 
 #contact .wrapper {
 	width: 100%;
-	// display: flex;
-	justify-content: space-around;
+	display: flex;
+	@include respond-to(xlarge) {
+		flex-direction: column-reverse;
+	}
 }
 
 .contact__sayHello  {
-	margin-left: 10%;
+	margin-left: 5%;
+	margin-right: 1%;
 	width: 50%;
 	color: white;
-	@include respond-to(large) {
+	@include respond-to(xlarge) {
 		width: 80%;
+		margin: 0 auto;
 	} @include respond-to(small) {
 		width: 95%;
 		margin-left: 0;
@@ -29,6 +33,9 @@
 	color: white;
 	text-align: left;
 	text-transform: uppercase;
+	@include respond-to(xlarge) {
+		text-align: center;
+	}
 }
 
 input, textarea {
@@ -90,32 +97,15 @@ textarea {
 }
 
 .contact__contactInfoContainer {
-	width: 270px;
-	background: white;
+	width: 40%;	
 	border-radius: 15px;
-	padding: 20px;
 	color: $brandColor;
-}
-
-.contact__contactInfoContainer h2 {
-	color: $brandColor;
-	font-size: 40px;
-}
-
-.contact__contactInfoContainer h3 {
-	margin: 0;
-	margin-bottom: 10px;
-	font-size: 25px;
-}
-
-.contact__address {
-	color: $brandColor;
-	text-align: center;
-}
-
-.contact__address p {
-	margin: 0;
-	font-size: 20px;
+	@include respond-to(xlarge) {
+		width: 100%;
+		margin-bottom: 50px;
+	} @include respond-to(pre-small) {
+		margin-bottom: 35px;
+	}
 }
 
 .contact__socialMediaIconContainer {
@@ -125,9 +115,45 @@ textarea {
 }
 
 .contact__socialMediaIcon {
-	display: flex;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+	@include respond-to(xlarge) {
+		width: 30%;
+	}
 }
 
-.contact__socialMediaIcon img {
-	width: 20%;
+.contact__socialMediaIcon p {
+	margin-top: 0;
+	@include respond-to(pre-small) {
+		display: none;
+	}
+}
+
+.contact__iconContainer {
+	margin: 0 auto;
+}
+
+#contact i {
+	color: white;
+	font-size: 50px;
+}
+
+.center_middle {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	transform: translateY(27%);
+	transition: all 0.2s ease;
+	@include respond-to(xlarge) {
+		width: 100%;
+		margin: 0 auto;
+	} @include respond-to(pre-small) {
+		width: 75%;
+		margin: 0 auto;
+	} @include respond-to(small) {
+		width: 100%;
+		margin: 0 auto;
+	}
 }
