@@ -201,12 +201,22 @@ img {
 .imgBorder .right {
   position: relative;
   top: 20px;
-  right: -20px; }
+  right: -20px;
+  box-shadow: 0 3px -7px 0 rgba(0, 0, 0, 0.12); }
+  @media (max-width: 690px) {
+    .imgBorder .right {
+      top: 14px;
+      right: -12px; } }
 
 .imgBorder .left {
   position: relative;
   top: 20px;
-  left: -20px; }
+  left: -20px;
+  box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.12); }
+  @media (max-width: 690px) {
+    .imgBorder .left {
+      top: 14px;
+      left: -12px; } }
 
 header {
   color: white;
@@ -217,11 +227,11 @@ header {
 
 header nav {
   width: 100%;
-  padding-right: 2%;
   display: flex;
   justify-content: flex-end; }
   @media (max-width: 690px) {
     header nav {
+      padding-right: 2%;
       position: relative; } }
 
 nav ul {
@@ -358,7 +368,7 @@ header a {
   @media (max-width: 480px) {
     #landing {
       padding: 60px 5px;
-      padding-top: 100px; } }
+      padding-top: 150px; } }
 
 #landing .wrapper {
   position: relative;
@@ -466,6 +476,9 @@ p.landing__welcomeBlurb {
 #aboutMe .wrapper h2 {
   text-align: right;
   margin-bottom: 30px; }
+  @media (max-width: 790px) {
+    #aboutMe .wrapper h2 {
+      text-align: center; } }
 
 .aboutMe__infoContainer {
   margin: 0 auto;
@@ -476,6 +489,9 @@ p.landing__welcomeBlurb {
   @media (max-width: 950px) {
     .aboutMe__infoContainer {
       flex-direction: column-reverse; } }
+  @media (max-width: 790px) {
+    .aboutMe__infoContainer {
+      position: relative; } }
 
 .aboutMe__blurb {
   font-size: 18px;
@@ -507,6 +523,7 @@ p.landing__welcomeBlurb {
   @media (max-width: 790px) {
     .aboutMe__textContainer {
       width: 80%;
+      text-align: center;
       transform: translateX(10%); } }
 
 @media (max-width: 950px) {

@@ -12,6 +12,9 @@
 #aboutMe .wrapper h2 {
 	text-align: right;
 	margin-bottom: 30px;
+	@include respond-to(medium) {
+		text-align: center;
+	}
 }
 
 .aboutMe__infoContainer {
@@ -22,6 +25,8 @@
 	justify-content: space-around;
 	@include respond-to(large) {
 		flex-direction: column-reverse;
+	} @include respond-to(medium) {
+		position: relative;
 	}
 }
 
@@ -54,6 +59,7 @@
 		transform: translateX(45%);
 	} @include respond-to(medium) {
 		width: 80%;
+		text-align: center;
 		transform: translateX(10%);
 	}
 }
