@@ -251,15 +251,16 @@ nav ul {
   @media (max-width: 690px) {
     nav ul {
       position: absolute;
-      bottom: -402%;
-      right: 10%;
+      bottom: -401%;
+      right: 9.5%;
       flex-direction: column;
       background: white;
       text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
       border-radius: 15px;
       display: none;
       visibility: hidden;
-      opacity: 0; } }
+      opacity: 0;
+      border: 2px solid #7e3fc6; } }
   @media (max-width: 480px) {
     nav ul {
       width: 80%;
@@ -290,11 +291,14 @@ header a {
     header a {
       font-size: 25px;
       color: #7e3fc6; } }
-  @media (max-width: 690px) {
-    header a:hover {
-      background: #7e3fc6;
-      color: white;
-      text-shadow: none; } }
+  header a:hover {
+    background: #7e3fc6;
+    color: white; }
+    @media (max-width: 690px) {
+      header a:hover {
+        background: #7e3fc6;
+        color: white;
+        text-shadow: none; } }
 
 .landing__hamburgerMenu {
   width: 80px;
@@ -715,7 +719,6 @@ i {
   margin-right: 10px; }
 
 #contact {
-  padding: 40px 60px;
   background: #7e3fc6; }
   @media (max-width: 790px) {
     #contact {
@@ -734,7 +737,6 @@ i {
       width: 100%; } }
 
 .contact__sayHello {
-  margin-left: 5%;
   margin-right: 1%;
   width: 50%;
   color: white; }
@@ -751,7 +753,8 @@ i {
 .contact__sayHello h2 {
   color: white;
   text-align: left;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  margin-bottom: 50px; }
   @media (max-width: 1000px) {
     .contact__sayHello h2 {
       text-align: center; } }
@@ -764,9 +767,9 @@ input, textarea {
   background: #7e3fc6;
   width: 100%;
   padding: 10px 0;
-  margin-bottom: 20px;
   font-size: 18px;
-  color: white; }
+  color: white;
+  margin-bottom: 25px; }
   input:focus, textarea:focus {
     outline: none; }
   input::placeholder, textarea::placeholder {
