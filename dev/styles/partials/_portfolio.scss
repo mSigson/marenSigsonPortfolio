@@ -79,6 +79,9 @@
 
 .portfolio__pieceInfo p {
 	width: 90%;
+	@include respond-to(ex-small) {
+		width: 100%;
+	} 
 }
 
 .portfolio__pieceInfo h3 {

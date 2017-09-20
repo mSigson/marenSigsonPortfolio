@@ -543,6 +543,9 @@ p.landing__welcomeBlurb {
       width: 80%;
       text-align: center;
       transform: translateX(10%); } }
+  @media (max-width: 790px) {
+    .aboutMe__textContainer {
+      padding: 0; } }
 
 @media (max-width: 950px) {
   .aboutMe__buttonContainer {
@@ -733,6 +736,9 @@ i {
 
 .portfolio__pieceInfo p {
   width: 90%; }
+  @media (max-width: 480px) {
+    .portfolio__pieceInfo p {
+      width: 100%; } }
 
 .portfolio__pieceInfo h3 {
   text-transform: uppercase;
@@ -888,7 +894,8 @@ textarea {
   @media (max-width: 690px) {
     .center_middle {
       width: 100%;
-      margin: 0 auto; } }
+      margin: 0 auto;
+      margin-bottom: 25px; } }
 
 footer {
   background: #7e3fc6;
