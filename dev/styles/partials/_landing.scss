@@ -27,6 +27,7 @@
 		width: 100%;
 	} @include respond-to(small) {
 		text-align: center;
+		margin-left: 0%;
 	}
 }
 
@@ -96,7 +97,7 @@ p.landing__welcomeBlurb {
 	width: 60%;
 	line-height: 1.5;
 	@include respond-to(large) {
-		width: 40%;
+		width: 60%;
 	} @include respond-to(small) {
 		width: 65%;
 		margin: 0 auto;

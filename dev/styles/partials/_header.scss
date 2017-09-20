@@ -33,7 +33,7 @@ nav ul {
 	@include respond-to(small) {
 		position: absolute;
 		bottom: -402%;
-		right: -2.5%;
+		right: 10%;
 		flex-direction: column;
 		background: white;
 		text-shadow: 1px 1px rgba(0,0,0,0.5);
@@ -42,9 +42,9 @@ nav ul {
 		visibility: hidden;
 		opacity: 0;
 	} @include respond-to(ex-small) {
-		width: 96.5%;
+		width: 80%;
+		bottom: -480%;
 		height: 60vh;
-		bottom: -453.5%;
 	}
 }
 

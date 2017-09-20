@@ -252,7 +252,7 @@ nav ul {
     nav ul {
       position: absolute;
       bottom: -402%;
-      right: -2.5%;
+      right: 10%;
       flex-direction: column;
       background: white;
       text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
@@ -262,9 +262,9 @@ nav ul {
       opacity: 0; } }
   @media (max-width: 480px) {
     nav ul {
-      width: 96.5%;
-      height: 60vh;
-      bottom: -453.5%; } }
+      width: 80%;
+      bottom: -480%;
+      height: 60vh; } }
 
 .hidden {
   visibility: hidden;
@@ -384,7 +384,8 @@ header a {
       width: 100%; } }
   @media (max-width: 690px) {
     .landing__greeting {
-      text-align: center; } }
+      text-align: center;
+      margin-left: 0%; } }
 
 .landing__greeting h1 {
   width: 95%; }
@@ -446,7 +447,7 @@ p.landing__welcomeBlurb {
   line-height: 1.5; }
   @media (max-width: 950px) {
     p.landing__welcomeBlurb {
-      width: 40%; } }
+      width: 60%; } }
   @media (max-width: 690px) {
     p.landing__welcomeBlurb {
       width: 65%;
@@ -550,7 +551,7 @@ p.landing__welcomeBlurb {
       padding: 40px 10px; } }
   @media (max-width: 480px) {
     #skills {
-      padding: 40px 0px; } }
+      padding: 40px 15px; } }
 
 #skills h2 {
   margin-bottom: 0; }
