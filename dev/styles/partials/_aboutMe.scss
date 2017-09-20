@@ -59,7 +59,12 @@
 		transform: translateX(10%);
 	} @include respond-to(medium) {
 		padding: 0;
-	} 
+		text-align: left;
+	} @include respond-to(ex-small) {
+		transform: translateX(0%);
+		margin: 0 auto;
+		width: 90%;
+	}
 }
 
 .aboutMe__buttonContainer {

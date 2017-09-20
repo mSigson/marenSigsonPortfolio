@@ -76,12 +76,14 @@
 		width: 60%;
 	} @include respond-to(medium) {
 		width: 80%;
+	}  @include respond-to(small) {
+		width: 95%;
 	}
 }
 
 .portfolio__pieceInfo p {
 	width: 90%;
-	@include respond-to(ex-small) {
+	@include respond-to(small) {
 		width: 100%;
 	} 
 }
