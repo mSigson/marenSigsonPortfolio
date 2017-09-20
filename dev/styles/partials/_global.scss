@@ -83,7 +83,7 @@ img {
 	top: 20px;
 	right: -20px;
 	box-shadow: 0 3px -7px 0 rgba(0,0,0,0.12);
-	@include respond-to(small) {
+	@include respond-to(large) {
 		top: 14px;
 		right: -12px;
 	}
@@ -94,7 +94,7 @@ img {
 	top: 20px;
 	left: -20px;
 	box-shadow: 0 3px 7px 0 rgba(0,0,0,0.12);
-	@include respond-to(small) {
+	@include respond-to(large) {
 		top: 14px;
 		left: -12px;
 	}

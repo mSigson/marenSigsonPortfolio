@@ -5,14 +5,10 @@
 	} 
 }
 
-// #aboutMe .wrapper {
-// 	max-width: 1000px;
-// }
-
 #aboutMe .wrapper h2 {
 	text-align: right;
 	margin-bottom: 30px;
-	@include respond-to(medium) {
+	@include respond-to(large) {
 		text-align: center;
 	}
 }
@@ -57,7 +53,7 @@
 	@include respond-to(large) {
 		width: 60%;
 		transform: translateX(45%);
-	} @include respond-to(medium) {
+	} @include respond-to(large) {
 		width: 80%;
 		text-align: center;
 		transform: translateX(10%);
