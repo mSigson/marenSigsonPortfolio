@@ -87,6 +87,19 @@ header a {
 	}
 }
 
+header a:nth-child(1){
+	@include respond-to(small) {
+		border-top-left-radius: 10px;
+	}
+}
+
+header a:nth-child(4){
+	@include respond-to(small) {
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+}
+
 // from Jesse Couch - https://codepen.io/designcouch/pen/Atyop
 
 .landing__hamburgerMenu {

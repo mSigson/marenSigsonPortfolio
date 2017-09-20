@@ -29,9 +29,7 @@ $(document).ready(function(){
 		if (win.width() < 651) {
 			$('#nav-icon').removeClass('open');
 			$('ul').removeClass('openNav');
-			$('section').on('click', function(e) {
-				$('ul').removeClass('openNav');
-			});
+			
 		} if (win.width() > 650) {
 			$('ul').removeClass('flex');
 			$('ul').addClass('openNav');
