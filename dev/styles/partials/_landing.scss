@@ -110,10 +110,10 @@ p.landing__welcomeBlurb {
 
 .landing__img {
 	position: absolute;
-	right: -80px;
+	right: -60px;
 	bottom: -80px;
 	z-index: 10;
-	width: calc(52% - 1em);
+	width: calc(50% - 1em);
 	opacity: 1;
 	visibility: visible;
 	@include respond-to(large) {
