@@ -84,8 +84,8 @@ img {
 	right: -20px;
 	box-shadow: 0 3px -7px 0 rgba(0,0,0,0.12);
 	@include respond-to(large) {
-		top: 14px;
-		right: -12px;
+		top: 12px;
+		right: -10px;
 	}
 }
 
@@ -95,7 +95,7 @@ img {
 	left: -20px;
 	box-shadow: 0 3px 7px 0 rgba(0,0,0,0.12);
 	@include respond-to(large) {
-		top: 14px;
-		left: -12px;
+		top: 12px;
+		left: -10px;
 	}
 }
