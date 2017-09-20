@@ -3,7 +3,7 @@
 	color: white;
 	overflow: hidden;
 	transition: all 0.5s ease;
-	padding-top: 125px;
+	padding-top: 160px;
 	@include respond-to(small) {
 		padding: 60px 30px;
 		padding-top: 125px;
@@ -15,7 +15,6 @@
 
 #landing .wrapper {
 	position: relative;
-	max-width: 1000px;
 	transition: all 0.2s ease;
 }
 

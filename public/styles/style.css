@@ -137,9 +137,9 @@ html {
   font-family: 'Exo 2', sans-serif; }
 
 .wrapper {
-  max-width: 1170px;
-  width: 100%;
-  margin: 0 auto; }
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%; }
 
 section {
   padding: 60px 50px; }
@@ -364,7 +364,7 @@ header a {
   color: white;
   overflow: hidden;
   transition: all 0.5s ease;
-  padding-top: 125px; }
+  padding-top: 160px; }
   @media (max-width: 690px) {
     #landing {
       padding: 60px 30px;
@@ -376,7 +376,6 @@ header a {
 
 #landing .wrapper {
   position: relative;
-  max-width: 1000px;
   transition: all 0.2s ease; }
 
 .landing__greeting {
@@ -480,9 +479,6 @@ p.landing__welcomeBlurb {
     #aboutMe {
       padding: 40px 5px; } }
 
-#aboutMe .wrapper {
-  max-width: 900px; }
-
 #aboutMe .wrapper h2 {
   text-align: right;
   margin-bottom: 30px; }
@@ -566,8 +562,6 @@ p.landing__welcomeBlurb {
   margin-bottom: 0; }
 
 .skills__borderContainer {
-  width: 95%;
-  margin: 0 auto;
   padding: 20px 0; }
 
 .skills__textContainer h2 {
