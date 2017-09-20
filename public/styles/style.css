@@ -137,7 +137,7 @@ html {
   font-family: 'Exo 2', sans-serif; }
 
 .wrapper {
-  max-width: 1100px;
+  max-width: 1170px;
   margin: 0 auto;
   width: 100%; }
 
@@ -364,7 +364,10 @@ header a {
   color: white;
   overflow: hidden;
   transition: all 0.5s ease;
-  padding-top: 160px; }
+  padding-top: 190px; }
+  @media (max-width: 950px) {
+    #landing {
+      padding-top: 130px; } }
   @media (max-width: 690px) {
     #landing {
       padding: 60px 30px;
@@ -461,7 +464,7 @@ p.landing__welcomeBlurb {
 
 .landing__img {
   position: absolute;
-  right: -115px;
+  right: -100px;
   bottom: -60px;
   z-index: 10;
   width: calc(55% - 1em);
