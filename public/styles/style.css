@@ -236,7 +236,7 @@ header nav {
 
 nav ul {
   background: #7e3fc6;
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   justify-content: space-around;
   display: flex;
@@ -373,10 +373,7 @@ header a {
   color: white;
   overflow: hidden;
   transition: all 0.5s ease;
-  padding-top: 140px; }
-  @media (max-width: 950px) {
-    #landing {
-      padding-top: 130px; } }
+  padding-top: 110px; }
   @media (max-width: 690px) {
     #landing {
       padding: 60px 30px;
@@ -394,7 +391,7 @@ header a {
   width: 65%;
   margin-right: 1em;
   transition: all 0.5s ease;
-  margin-left: 7.5%; }
+  margin-left: 6%; }
   @media (max-width: 950px) {
     .landing__greeting {
       width: 100%; } }
@@ -473,10 +470,10 @@ p.landing__welcomeBlurb {
 
 .landing__img {
   position: absolute;
-  right: -60px;
+  right: -100px;
   bottom: -80px;
   z-index: 10;
-  width: calc(50% - 1em);
+  width: 650px;
   opacity: 1;
   visibility: visible; }
   @media (max-width: 950px) {
@@ -666,7 +663,8 @@ i {
   font-size: 70px; }
 
 #portfolio h2 {
-  text-align: left; }
+  text-align: left;
+  margin-left: 3.5%; }
   @media (max-width: 690px) {
     #portfolio h2 {
       margin-left: 2%; } }
@@ -675,6 +673,7 @@ i {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding: 20px;
   margin-bottom: 100px; }
   @media (max-width: 790px) {
     .portfolio__piece {
@@ -695,7 +694,7 @@ i {
     text-align: left; } }
 
 .portfolio__piece:nth-child(even) .portfolio__pieceInfo {
-  margin-left: 4%;
+  margin-left: 5%;
   text-align: left; }
   @media (max-width: 950px) {
     .portfolio__piece:nth-child(even) .portfolio__pieceInfo {
@@ -703,7 +702,7 @@ i {
       text-align: left; } }
 
 .portfolio__piece:nth-child(odd) .portfolio__pieceInfo {
-  margin-left: 12%;
+  margin-left: 5%;
   text-align: left; }
   @media (max-width: 950px) {
     .portfolio__piece:nth-child(odd) .portfolio__pieceInfo {
@@ -756,7 +755,7 @@ i {
       padding: 40px 10px; } }
 
 #contact .wrapper {
-  width: 100%;
+  width: 90%;
   max-width: 850px;
   margin: 0 auto;
   display: flex;
