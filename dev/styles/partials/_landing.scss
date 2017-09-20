@@ -3,7 +3,7 @@
 	color: white;
 	overflow: hidden;
 	transition: all 0.5s ease;
-	padding-top: 190px;
+	padding-top: 140px;
 	@include respond-to(large) {
 		padding-top: 130px;
 	} @include respond-to(small) {
@@ -110,10 +110,10 @@ p.landing__welcomeBlurb {
 
 .landing__img {
 	position: absolute;
-	right: -100px;
-	bottom: -60px;
+	right: -80px;
+	bottom: -80px;
 	z-index: 10;
-	width: calc(55% - 1em);
+	width: calc(52% - 1em);
 	opacity: 1;
 	visibility: visible;
 	@include respond-to(large) {

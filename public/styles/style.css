@@ -364,7 +364,7 @@ header a {
   color: white;
   overflow: hidden;
   transition: all 0.5s ease;
-  padding-top: 190px; }
+  padding-top: 140px; }
   @media (max-width: 950px) {
     #landing {
       padding-top: 130px; } }
@@ -464,10 +464,10 @@ p.landing__welcomeBlurb {
 
 .landing__img {
   position: absolute;
-  right: -100px;
-  bottom: -60px;
+  right: -80px;
+  bottom: -80px;
   z-index: 10;
-  width: calc(55% - 1em);
+  width: calc(52% - 1em);
   opacity: 1;
   visibility: visible; }
   @media (max-width: 950px) {
