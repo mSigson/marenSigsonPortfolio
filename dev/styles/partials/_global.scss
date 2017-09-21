@@ -69,6 +69,11 @@ button {
 	}
 }
 
+label {
+	display: absolute;
+	right: -10000px;
+}
+
 img {
 	max-width: 100%;
 }

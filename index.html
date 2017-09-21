@@ -42,8 +42,10 @@
 					<h1><span class="landing__myName">Maren Sigson</span></h1>
 				</div>
 				<p class="landing__myRole">Web Developer</p>
-				<p class="landing__welcomeBlurb">I am a Toronto based web developer. I recently graduated from Hacker You's full time Bootcamp and I am now looking for the next challenge in this career journey. If you are looking for a hard working, creative asset for your team then I would like the opportunity to show you how I can help.</p>
-				<button class="landing_downloadResumeBtn">Download Resume</button>
+				<p class="landing__welcomeBlurb">I am a Toronto based web developer. I recently graduated from HackerYou's full time Bootcamp and I am now looking for the next challenge in this career journey. If you are looking for a hard working, creative asset for your team then I would like the opportunity to show you how I can help.</p>
+				<a href="public/assets/marenSigsonResume.pdf" download>
+					<button class="landing_downloadResumeBtn" href="/assets/marenSigsonResume.pdf" download>Download Resume</button>
+				</a>
 			</div>
 			<img class="landing__img" src="public/assets/marenColorPop.png" alt="A color pop genre characture of Maren Sigson.">
 		</div>
@@ -56,12 +58,12 @@
 				</div>
 				<div class="aboutMe__textContainer">
 					<h2>About Me</h2>
-					<p class="#aboutMe__blurb">Having grown up in Hong Kong and then attending University in the United Kingdom, I have experienced working in diverse and project oriented environments. My creative process has been showcased in both individual and group settings. This training and it's result oriented focus give me a broad and alternative viewpoint as I approach web development. I realize practice and focus is what lets one perfect their craft and I look forward to applying this in a dynamic work environment. </p>
+					<p class="#aboutMe__blurb">Having grown up in Hong Kong and then attending University in the United Kingdom, I have experienced working in diverse and project oriented environments. My creative process has been showcased in both individual and group settings. This training and its result oriented focus give me a broad and alternative viewpoint as I approach web development. I realize practice and focus is what lets one perfect their craft and I look forward to applying this in a dynamic work environment. </p>
 					<div class="aboutMe__buttonContainer">
 						<a href="#contact">
 							<button class="aboutMe__contactNowBtn">Contact Now </button>
 						</a>
-						<button class="aboutMe__DownloadResumeBtn">Download Resume </button>
+						<a href="public/assets/marenSigsonResume.pdf" download><button class="aboutMe__DownloadResumeBtn">Download Resume </button></a>
 					</div>
 				</div>
 			</div>
@@ -180,7 +182,25 @@
 				</div>
 				<div class="portfolio__piece">
 					<div class="portfolio__pieceImgContainer imgBorder">
-						<img class="right" src="public/assets/jQueryInteractive.png" alt="A screen shot of Maren's 3rd HackerYou project `Guess It!`.">
+						<img class="right" src="public/assets/playlisttoronto.png" alt="An image of the hero page of HackerYou bootcamp project 2 completed by Maren Sigson.">
+					</div>
+					<div class="portfolio__pieceInfo">
+						<h3 class="portfolio__pieceName">Playlist Toronto</h3>
+						<p>An interactive application built with React.  The user searches for a date and/or genre, shows meeting the requirements are pulled from a firebase database and rendered to the page.  The user can upload their own shows through the site to promote their own productions. </p>
+						<h4>REACT  /  FIREBASE  /  JAVASCRIPT  /  JQUERY  /  HTML5  /  CSS3  /  SASS</h4>
+						<div class="portfolio__liveLinksContainer">
+							<a href="https://marensigson-project6.firebaseapp.com/">
+								<button>View Live</button>
+							</a>
+							<a href="https://github.com/mSigson/project6">
+								<button>Github</button>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="portfolio__piece">
+					<div class="portfolio__pieceImgContainer imgBorder">
+						<img class="left" src="public/assets/jQueryInteractive.png" alt="A screen shot of Maren's 3rd HackerYou project `Guess It!`.">
 					</div>
 					<div class="portfolio__pieceInfo">
 						<h3>Guess It!</h3>
@@ -205,7 +225,7 @@
 				<h2>Say Hello</h2>
 				<form action="http://www.focuspocus.io/magic/msigson@gmail.com" method="POST">
 					<div class="contact__nameInput">
-						<input type="text" placeholder="First Name*" required="">
+						<input name="firstName"type="text" placeholder="First Name*" required="">
 						<input type="text" placeholder="Last Name*" required="">
 					</div>
 					<input type="email" placeholder="Your Email*" required>
