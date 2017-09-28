@@ -261,8 +261,11 @@ nav ul {
       background: white;
       text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
       border: 2px solid #7e3fc6;
-      padding: 70px;
-      text-align: center; } }
+      padding: 70px; } }
+
+nav ul li {
+  padding: 27px;
+  text-align: center; }
 
 @media (max-width: 690px) {
   input#toggle:checked + ul.navigation {
@@ -292,14 +295,6 @@ header a {
     header a {
       font-size: 25px;
       color: #7e3fc6; } }
-  header a:hover {
-    background: #7e3fc6;
-    color: white; }
-    @media (max-width: 690px) {
-      header a:hover {
-        background: #7e3fc6;
-        color: white;
-        text-shadow: none; } }
 
 .landing__hamburgerMenu {
   width: 50px;

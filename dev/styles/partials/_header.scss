@@ -35,8 +35,12 @@ nav ul {
 		text-shadow: 1px 1px rgba(0,0,0,0.5);
 		border: 2px solid $brandColor;
 		padding: 70px;
-		text-align: center;
 	}
+}
+
+nav ul li {
+	padding: 27px;
+	text-align: center;
 }
 
 input#toggle:checked + ul.navigation {
@@ -72,14 +76,6 @@ header a {
 	@include respond-to(small) {
 		font-size: 25px;
 		color: $brandColor;
-	} &:hover {
-		background: $brandColor;
-		color: white;
-		@include respond-to(small) {
-			background: $brandColor;
-			color: white;
-			text-shadow: none;
-		}
 	}
 }
 
