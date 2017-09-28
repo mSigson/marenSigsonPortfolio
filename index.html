@@ -17,20 +17,23 @@
 	<header>
 		<div class="wrapper">
 			<nav>
-				<ul class="">
+				<input class="menuCheckbox" type="checkbox" id="toggle" name="toggle">
+				<ul class="navigation">
 					<a href="#aboutMe"><li>About</li></a>
 					<a href="#skills"><li>Skills</li></a>
 					<a href="#portfolio"><li>Portfolio</li></a>
 					<a href="#contact"><li>Contact</li></a>
 				</ul>
-				<div class="landing__hamburgerMenu">
-					<div id="nav-icon">
-					  <span></span>
-					  <span></span>
-					  <span></span>
-					  <span></span>
+				<label class="menuLabel" for="toggle">
+					<div class="landing__hamburgerMenu">
+						<div id="nav-icon">
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						  <span></span>
+						</div>
 					</div>
-				</div>
+				</label>
 			</nav>
 		</div>
 	</header>
@@ -223,15 +226,13 @@
 		<div class="wrapper">
 			<div class="contact__sayHello">
 				<h2>Say Hello</h2>
-				<form action="http://www.focuspocus.io/magic/msigson@gmail.com" method="POST">
-					<div class="contact__nameInput">
-						<input name="firstName"type="text" placeholder="First Name*" required="">
-						<input type="text" placeholder="Last Name*" required="">
-					</div>
-					<input type="email" placeholder="Your Email*" required>
-					<textarea name="" id="" cols="30" rows="10" placeholder="Your Message*"></textarea>
+				<form action="https://formspree.io/msigson@gmail.com"
+      			method="POST">
+					<input name="firstName" type="text" placeholder="Name*" required>
+					<input type="email" name="_replyto" name="email" placeholder="Your Email*" required>
+					<textarea name="message" id="" cols="30" rows="10" placeholder="Your Message*"></textarea>
 					<div class="contact__formSubmitBtm">
-						<button type="submit">Send Message</button>
+						<button type="submit" value="Send">Send Message</button>
 					</div>
 				</form>
 			</div>

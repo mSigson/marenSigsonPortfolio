@@ -10,10 +10,6 @@ header nav {
 	width: 100%;
 	display: flex;
 	justify-content: flex-end;
-	@include respond-to(small) {
-		padding-right: 2%;
-		position: relative;
-	}
 }
 
 nav ul {
@@ -27,25 +23,25 @@ nav ul {
 	transition: all 0.5s;
 	z-index: 10;
 	text-shadow: 2px 2px rgba(0,0,0,0.5);
-	transition: all 0.2s;
-	visibility: hidden;
-	opacity: 0;
+	transition: all 0.5s;
 	@include respond-to(small) {
 		position: absolute;
-		bottom: -401%;
-		right: 9.5%;
-		flex-direction: column;
+		top: 0;
+		right: -200%;
+		bottom: -1200%;
+		left: 0;
+		display: block;
 		background: white;
 		text-shadow: 1px 1px rgba(0,0,0,0.5);
-		border-radius: 15px;
-		display: none;
-		visibility: hidden;
-		opacity: 0;
 		border: 2px solid $brandColor;
-	} @include respond-to(ex-small) {
-		width: 80%;
-		bottom: -480%;
-		height: 60vh;
+		padding: 70px;
+		text-align: center;
+	}
+}
+
+input#toggle:checked + ul.navigation {
+	@include respond-to(small) {
+		right: 0
 	}
 }
 
@@ -87,24 +83,11 @@ header a {
 	}
 }
 
-header a:nth-child(1){
-	@include respond-to(small) {
-		border-top-left-radius: 10px;
-	}
-}
-
-header a:nth-child(4){
-	@include respond-to(small) {
-		border-bottom-left-radius: 10px;
-		border-bottom-right-radius: 10px;
-	}
-}
-
 // from Jesse Couch - https://codepen.io/designcouch/pen/Atyop
 
 .landing__hamburgerMenu {
-	width: 80px;
-	height: 75px;
+	width: 50px;
+	height: 50px;
 	margin-right: 40px;
 	background: $brandColor;
 	box-shadow: 0 3px 7px 0 rgba(0,0,0,.12);
@@ -117,19 +100,29 @@ header a:nth-child(4){
 	}
 }
 
+.menuLabel {
+	z-index: 200;
+}
+
+.menuCheckbox {
+	position: absolute;
+	right: -1000px;
+}
+
 #nav-icon {
   margin: auto;
-  width: 50px;
-  height: 45px;
+  width: 30px;
+  height: 25px;
   position: relative;
   transform: rotate(0deg);
   background: $brandColor;
+  top: 3px;
 }
 
 #nav-icon span {
   display: block;
   position: absolute;
-  height: 9px;
+  height: 3px;
   width: 100%;
   background: white;
   border-radius: 9px;
@@ -144,11 +137,11 @@ header a:nth-child(4){
 }
 
 #nav-icon span:nth-child(2),#nav-icon span:nth-child(3) {
-	top: 18px;
+	top: 8px;
 }
 
 #nav-icon span:nth-child(4) {
-	top: 36px;
+	top: 16px;
 }
 
 #nav-icon.open span:nth-child(1) {

@@ -3,6 +3,12 @@ html {
 	font-family: 'Exo 2', sans-serif;
 }
 
+body {
+	@include respond-to(small) {
+		position: relative;
+	}
+}
+
 .wrapper {
 	max-width: 1170px;
 	margin: 0 auto;

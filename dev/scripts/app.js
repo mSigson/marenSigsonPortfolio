@@ -2,13 +2,13 @@ $(document).ready(function(){
 
 	$('.landing__hamburgerMenu').click(function(){
 		$('#nav-icon').toggleClass('open');
-		$('ul').addClass('flex');
+		// $('ul').addClass('flex');
 
-		if ($('#nav-icon').hasClass('open')){
-			$('ul').addClass('openNav');
-		} else {
-			$('ul').removeClass('openNav');
-		}
+		// if ($('#nav-icon').hasClass('open')){
+		// 	$('ul').addClass('openNav');
+		// } else {
+		// 	$('ul').removeClass('openNav');
+		// }
 	});
 
 	$("a").on('click', function(e) {
@@ -24,22 +24,22 @@ $(document).ready(function(){
 
 	});
 
-	$(window).on('resize', function(){
-		const win = $(this);
-		if (win.width() < 651) {
-			$('#nav-icon').removeClass('open');
-			$('ul').removeClass('openNav');
+	// $(window).on('resize', function(){
+	// 	const win = $(this);
+	// 	if (win.width() < 651) {
+	// 		$('#nav-icon').removeClass('open');
+	// 		$('ul').removeClass('openNav');
 			
-		} if (win.width() > 650) {
-			$('ul').removeClass('flex');
-			$('ul').addClass('openNav');
-		} 
-	});
+	// 	} if (win.width() > 650) {
+	// 		$('ul').removeClass('flex');
+	// 		$('ul').addClass('openNav');
+	// 	} 
+	// });
 
 
 });
 
 
-if ($(window).width() > 650 ){
-	$('ul').addClass('openNav');
-}
+// if ($(window).width() > 650 ){
+// 	$('ul').addClass('openNav');
+// }

@@ -136,6 +136,10 @@ html {
   font-size: 16px;
   font-family: 'Exo 2', sans-serif; }
 
+@media (max-width: 690px) {
+  body {
+    position: relative; } }
+
 .wrapper {
   max-width: 1170px;
   margin: 0 auto;
@@ -233,10 +237,6 @@ header nav {
   width: 100%;
   display: flex;
   justify-content: flex-end; }
-  @media (max-width: 690px) {
-    header nav {
-      padding-right: 2%;
-      position: relative; } }
 
 nav ul {
   background: #7e3fc6;
@@ -249,27 +249,24 @@ nav ul {
   transition: all 0.5s;
   z-index: 10;
   text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
-  transition: all 0.2s;
-  visibility: hidden;
-  opacity: 0; }
+  transition: all 0.5s; }
   @media (max-width: 690px) {
     nav ul {
       position: absolute;
-      bottom: -401%;
-      right: 9.5%;
-      flex-direction: column;
+      top: 0;
+      right: -200%;
+      bottom: -1200%;
+      left: 0;
+      display: block;
       background: white;
       text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
-      border-radius: 15px;
-      display: none;
-      visibility: hidden;
-      opacity: 0;
-      border: 2px solid #7e3fc6; } }
-  @media (max-width: 480px) {
-    nav ul {
-      width: 80%;
-      bottom: -480%;
-      height: 60vh; } }
+      border: 2px solid #7e3fc6;
+      padding: 70px;
+      text-align: center; } }
+
+@media (max-width: 690px) {
+  input#toggle:checked + ul.navigation {
+    right: 0; } }
 
 .hidden {
   visibility: hidden;
@@ -304,18 +301,9 @@ header a {
         color: white;
         text-shadow: none; } }
 
-@media (max-width: 690px) {
-  header a:nth-child(1) {
-    border-top-left-radius: 10px; } }
-
-@media (max-width: 690px) {
-  header a:nth-child(4) {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; } }
-
 .landing__hamburgerMenu {
-  width: 80px;
-  height: 75px;
+  width: 50px;
+  height: 50px;
   margin-right: 40px;
   background: #7e3fc6;
   box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.12);
@@ -327,18 +315,26 @@ header a {
       margin-right: 5px;
       display: flex; } }
 
+.menuLabel {
+  z-index: 200; }
+
+.menuCheckbox {
+  position: absolute;
+  right: -1000px; }
+
 #nav-icon {
   margin: auto;
-  width: 50px;
-  height: 45px;
+  width: 30px;
+  height: 25px;
   position: relative;
   transform: rotate(0deg);
-  background: #7e3fc6; }
+  background: #7e3fc6;
+  top: 3px; }
 
 #nav-icon span {
   display: block;
   position: absolute;
-  height: 9px;
+  height: 3px;
   width: 100%;
   background: white;
   border-radius: 9px;
@@ -351,10 +347,10 @@ header a {
   top: 0px; }
 
 #nav-icon span:nth-child(2), #nav-icon span:nth-child(3) {
-  top: 18px; }
+  top: 8px; }
 
 #nav-icon span:nth-child(4) {
-  top: 36px; }
+  top: 16px; }
 
 #nav-icon.open span:nth-child(1) {
   top: 18px;
